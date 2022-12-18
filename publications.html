@@ -1,120 +1,87 @@
-<!DOCTYPE html>
 <html lang="en">
-<title>Sandeep Kaur Kuttal</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="css/basics.css">
-<link rel="icon" href="images/initials.png">
+<head>
+  <title>Sandeep Kaur Kuttal</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="main.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
 
 <body>
-
-<!-- Sidebar/menu -->
-<nav class="w3-sidebar w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:320px;font-weight:bold;background-color: rgb(158, 0, 32);" id="mySidebar"><br>
-
-  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px;">Close Menu</a>
-
-  <div class="w3-container">
-  	<img id="headshot" class="w3-round" src="images/portrait.png" alt="profile picture" style="object-position:center;">
-    <h3 id="sidebar_name" style="text-align:center;color: black;"><b>Sandeep Kaur Kuttal</b></h3>
-    <p id="sidebar_info" style="text-align:center;color: black;">Associate Professor at NC State
-    	<br/>
-    	skuttal@ncsu.edu | <a href="https://www.linkedin.com/in/sandeep-kaur-kuttal-b9995513/" target="_blank"><i class="fa fa-linkedin w3-hover-opacity"></i></a> &nbsp;
-    </p>
-  </div>
-
-  <hr style="width:100%;border:1px solid black;margin:auto;margin-bottom:32px;" class="w3-round">
-
-  <div class="w3-bar-block">
-    <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white w3-round">About</a> 
-    <a href="research.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white w3-round">Research</a> 
-    <a href="publications.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white w3-round">Publications</a> 
-    <a href="teaching.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white w3-round">Teaching</a>  
-    <a href="service.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white w3-round">Service</a>
-    <a href="Files/cv.pdf" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white w3-round">CV</a>
-  </div>  
-
-</nav>
-
-<!-- Top menu on small screens -->
-<header class="w3-container w3-top w3-hide-large w3-xlarge w3-padding">
-  <a href="javascript:void(0)" class="w3-button black w3-margin-right" onclick="w3_open()">☰</a>
-  <span>Sandeep Kaur Kuttal</span>
-</header>
-
-<!-- Overlay effect when opening sidebar on small screens -->
-<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
-
-<!-- !PAGE CONTENT! -->
-<div class="w3-main" style="margin-left:340px;margin-right:40px;margin-bottom:40px">
-
-  <!-- Header -->
-<div class="w3-container" style="margin-top:80px">
-    <h1 class="font-size=x-large"><b>Publications:</b></h1>
-    <hr class="w3-round teal_divider">
+    <header>
+        <div class="name">
+          <a href="index.html" class="name" style="font-size:45px; color:white">Sandeep Kaur Kuttal</a>
+        </div>
+        <nav class="nav">
+          <a class="nav-link" href="index.html">About</a> 
+          <a class="nav-link" href="research.html">Research</a> 
+          <a class="nav-link" href="publications.html">Publications</a> 
+          <a class="nav-link" href="teaching.html">Teaching</a>  
+          <a class="nav-link" href="service.html">Service</a>
+          <a class="nav-link" href="Files/cv.pdf">CV</a>
+        </nav>
+    </header>
     
-    <!-- Selected Publications -->
-    <div class="research-body">
-        <h3>Selected Publications:</h3>
-        <li>  P. Robe, <b> S. K. Kuttal</b>, J. Aubuchon and  J. Hart, Pair Programming Conversations with Agents vs. Developers: Challenges & Opportunities for SE Community, The ACM Joint European Software Engineering Conference, and Symposium on the Foundations of Software Engineering, 2022.
-        <li>J. Hart, J. Aubuchon and  <b>S. K. Kuttal</b>, Feasibility of using YouTube Conversations for Pair Programming Intent Classification, IEEE Symposium on Visual Languages and Human-Centric Computing, 2022.
-        <li>A. McAuliffe, J. Hart and  <b>S. K. Kuttal</b>, Evaluating Gender Effects in Pair Programming Conversations, IEEE Symposium on Visual Languages and Human-Centric Computing, 2022.
-        <li>A. Sedhain, S. S. Ragavan, B. McKinney and  <b>S. K. Kuttal</b>, Estimating Foraging Values and Costs in Stack Overflow, IEEE Symposium on Visual Languages and Human-Centric Computing, 2022.
-        <li>A. Sedhain and  <b>S. K. Kuttal</b>, Information Seeking Behavior for Bugs on GitHub: An Information Foraging Perspective, IEEE Symposium on Visual Languages and Human-Centric Computing, 2022.
-        <li>V. Diwanji, A. Sedhain, G. Bodi and <b> S. K. Kuttal</b>, Developers' Foraging Behavior on Stack Overflow, IEEE Symposium on Visual Languages and Human-Centric Computing, 2022.  
-        <li>  C. Lott, A. McAuliffe, <b> S. K. Kuttal</b>, "Remote Pair Collaborations of CS Students: Leaving Women Behind?" in Proceedings of Visual Languages and Human-Centric Computing (VL/HCC), 2021. [<a href="Publications/Gender_Paper_VLHCC2021.pdf"  target="_blank">PDF</a>]
-        <li>  <b>  S. K. Kuttal</b>, B. Ong, K. Kwasny, P. Robe, "Trade-offs for Substituting a Human with an Agent in a Pair Programming Context: The Good, the Bad, and the Ugly" in Proceedings of the conference on Human Factors in Computing - CHI 2021 (<font color="red"><b>Honorable Mention</b></font>). [<a href="Publications/HA_PP_GBU.pdf"  target="_blank">PDF</a>]
-        <li>  <b>  S. K. Kuttal</b>, A. Sedhain, and J. AuBuchon, Designing a Gender-Inclusive Conversational Agent For Pair Programming: An Empirical Investigation. In Artificial Intelligence in HCI, H. Degen and S. Ntoa (Eds.). Springer International Publishing, 59-75, 2021. [<a href="Publications/GenderInclusiveAgent2021.pdf"  target="_blank">PDF</a>]    
-        <li>  <b>  S. Kuttal </b>, A. Sedhain, and B. Riethmeier, How do web-active end-user programmers forage?  Coding Theory - Recent Advances, New Perspectives and Applications, S. Radhakrishnan (Ed.), IntechOpen, London, United Kingdom, 2021. [<a href="Publications/WebActiveEUPForage.pdf"  target="_blank">PDF</a>]
-        <li>P. Robe, <b>S. K. Kuttal</b> "Designing PairBuddy - A Conversational Agent for Pair Programming" in ACM Transactions of Human Computer Interactions (TOCHI), 2021. [<a href="Publications/Pairbuddy_Programming_Agent_UCD.pdf"  target="_blank">PDF</a>]   
-        <li>  <b>  S. K. Kuttal</b>, X. Chen, Z. Wang, S.Balali, A. Sarma "Visual Resume: Exploring Developers' Online Contributions for Hiring" in Information and Software Technology (IST), 2021. [<a href="Publications/VisualResume2021.pdf"   target="_blank">PDF</a>]         
-        <li>  <b>  S. K. Kuttal</b>, A. Ghosh, "Source Code Comments: Overlooked in the Realm of Code Clone Detection" International Journal of Computer Science and Information Security (IJCSIS), November 2020, issue (Vol. 18 No. 11). [<a href="Publications/SRC_Code_Comments.pdf"   target="_blank">PDF</a>]
-        <li>  <b> S. K. Kuttal</b>, S. Y. Kim, C. Martos, A. Bejarano, How End-User Programmers Forage in Online Repositories? An Information Foraging Perspective, Journal of Computer Languages (COLA), November, 2020 (<font color="red"><b>Invited Talk</b></font>). [<a href="Publications/EUPsForageOnline.pdf"   target="_blank">PDF</a>]    
-        <li>  <b> S. K. Kuttal</b>, J. Myers, S. Gurka, D. Magar, D. Piorkowski, R. Bellamy, Towards Designing Conversational Agents for Pair Programming: Accounting for Creativity Strategies and Conversational Styles, in Proceedings of Visual Languages and Human-Centric Computing (VL/HCC), 2020. [<a href="Publications/HH-HA.pdf" 	target="_blank">PDF</a>]
-        <li>  P. Robe,<b> S. K. Kuttal</b>, Y. Zhang, R. Bellamy, Can Machine Learning Facilitate Remote Pair Programming? Challenges, Insights & Implications, in Proceedings of Visual Languages and Human-Centric Computing (VL/HCC), 2020. [<a href="Publications/ML.pdf" 	target="_blank">PDF</a>]  
-        <li> <b>S. K. Kuttal</b>, Y. Bai, E. Scott, R. Sharma, Tug of Perspectives: Mobile App Users vs Developers, International Journal of Computer Science and Information Security (IJCSIS), June 2020 issue (Vol. 18 No. 6). [<a href="Publications/Appstore.pdf" 	target="_blank">PDF</a>]
-        <li>  <b>S. K. Kuttal</b>, M. M. Sun, A. Ghosh, R. Sharma, Birds of a Feather Flock Together? A Study of Developers' Flocking and Migration Behavior in GitHub and Stack Overflow, International Journal of Computer Science and Information Security (IJCSIS), June 2020 issue (Vol. 18 No. 6).[<a href="Publications/SocialNW.pdf" 	target="_blank">PDF</a>]
-        <li>  <b>S. K. Kuttal</b>, K. Gerstner, A. Bejarano, "Remote Pair Programming in Online CS Education: Investigating through a Gender Lens", in Proceedings of Visual Languages and Human-Centric Computing (VL/HCC), 2019. [<a href="Publications/Gender.pdf" 	target="_blank">PDF</a>]
-        <li>  <b>S. K. Kuttal</b>, M. M. Burnett, A. Sarma, G. Rothermel, I. Koeppe, B. Shepherd, "How End-User Programmers Debug Visual Web-Based Programs: An Information Foraging Theory Perspective" Journal of Visual Languages and Computing (JVLC), 2019. [<a href="Publications/IFT_journal.pdf" 	target="_blank">PDF</a>]
-        <li>  C. Zhou , <b>S. K. Kuttal</b>, I. Ahmed, "What Makes a Good Developer? An Empirical Study of Developers' Technical and Social Competencies", in Proceedings of the IEEE Symposium on Visual Languages and Human-Centric Computing (VL/HCC), 2018. [<a href="Publications/Good-Developer-VLHCC-2018.pdf" 	target="_blank">PDF</a>]  
-        <li> A. Ghosh, <b>S. K. Kuttal</b>, "Semantic clone detection: Can source code comments help?"", in Proceedings of the IEEE Symposium on Visual Languages and Human-Centric Computing (VL/HCC), 2018. [<a href="Publications/clones-vlhcc-2018.pdf" 	target="_blank">PDF</a>]   
-        <li>  S. S. Ragavan, B. Pandya, S. Chattopadhyay, D. Piorkowski, C. Hill, <b>S. K. Kuttal</b>, A. Sarma, M. Burnett, "Modeling Foraging Through Patch Hierarchies", 2020.
-        <li> <b>S. K. Kuttal</b>, A. Sarma, and G. Rothermel, Z. Wang, "What Happened to My Application? Helping End Users Comprehend Evolution through Variation Management", in Information and Software Technology -IST, Volume 103, Pages 55-74, November 2018. [<a href="Publications/AppInv.pdf" 	target="_blank">PDF</a>] 
-        <li> S. S. Ragavan, B. Pandya, D. Piorkowski, C. Hill, <b>S. K. Kuttal</b>, A. Sarma, M. Burnett, "PFIS-V: Modeling Foraging Behavior in the Presence of Variants", in Proceedings of Computer and Human Interactions - CHI, Denver, USA, May 2017. [<a href="Publications/PFIS-V-CHI-2017.pdf" 	target="_blank">PDF</a>]
-        <li>  C. Martos, S. Y. Kim, <b>S. K. Kuttal</b>,"Reuse of Variants in Online Repositories: Foraging for the Fittest" in Proceedings of the IEEE Symposium on Visual Languages and Human-Centric Computing - VL/HCC, Cambridge, UK, pages 124 - 128 , September 2016. [<a href="Publications/variants-foraging-2016.pdf" 	target="_blank">PDF</a>]
-        <li> S. S. Ragavan,<b> S. K. Kuttal</b>, C. Hill, A. Sarma, D. J. Piorkowski, M. M. Burnett, "Foraging among an Overabundance of Similar Variants" , in Proceedings of Computer and Human Interactions - CHI, San Jose, USA,pages  3509-3521 , May 2016 (<font color="red"><b>Best Paper</b></font>). [<a href="Publications/Foraging_CHI.pdf" 	target="_blank">PDF</a>]               
-        <li> A. Sarma, X. Chen, <b>S. K. Kuttal</b>, L. Dabbish, Z. Wang,  "Hiring in the Global Stage: Profiles of Online Contributions", International Conference of Global Software Engineering - ICGSE 2016 (<font color="red"><b>Best Paper</b></font>). [<a href="Publications/Hiring.pdf" 	target="_blank">PDF</a>]
-        <li>  W. Jernigan, A. Horvath, M. Lee, M. Burnett, T. Cuilty, <b>S. K. Kuttal</b>, A. Peters, I. Kwan, F. Bahmani, A. Ko, C. J. Mendez, "General Principles for a Generalized Idea Garden", in Journal of Visual Languages and Computing -JVLC, 2017. [<a href="Publications/Idea-Garden-JVLC-2017.pdf" 	target="_blank">PDF</a>]
-        <li> W. Jernigan, A. Horvath, T. Cuilty, M. Burnett, M. Lee,  <b>S.K. Kuttal</b>, A. Peters, I. Kwan, F. Bahmani, A. Ko, "Principles of Idea Garden Hints for End-User Programmers", in Proceedings of the IEEE Symposium on Visual Languages and Human-Centric Computing - VL/HCC, Atlanta, Georgia, 2015. [<a href="Publications/IGprinciples-VLHCC-2015.pdf" 	target="_blank">PDF</a>]
-        <li><b>Sandeep K Kuttal</b>, A. Sarma, and G. Rothermel, "On the Benefits of Providing Versioning Support for End-Users: an Empirical Study", in Proceedings of Transactions of Computer and Human Interactions - TOCHI Volume 21(2), pages 9:1- 9:43, February 2014 (<font color="red"><b>Invited Talk</b></font>). [<a href="Publications/PipePlumber.pdf" 	target="_blank">PDF</a>]
-        <li><b> Sandeep K Kuttal</b>, A. Sarma, and G. Rothermel, "Debugging Support for End-User Mashup Programming", in Proceedings of Computer and Human Interactions - CHI, Paris, France,pages 1609 - 1618, April 2013. [<a href="Publications/Kuttal2013CHI.pdf" 	target="_blank">PDF</a>]
-        <li><b>Sandeep K Kuttal</b>, "Variation Support for End Users", in Proceedings of the IEEE Symposium on Visual Languages and  Human-Centric Computing - VL/HCC, San Jose, CA, USA, pages 183 - 184, September 2013. [<a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=RNfafUcAAAAJ&citation_for_view=RNfafUcAAAAJ:qjMakFHDy7sC" 	target="_blank">Google Scholar</a>]
-        <li><b>Sandeep K Kuttal</b>, A. Sarma, and G  Rothermel, "Predator Behavior in the Wild Web World of Bugs: An Information Foraging Theory Perspective", in Proceedings of the IEEE Symposium on Visual Languages and     Human-Centric Computing - VL/HCC, San Jose, CA, USA, pages 59-66, September 2013.	[<a href="Publications/IFT2013.pdf" 	target="_blank">PDF</a>]
-        <li><b>Sandeep K Kuttal</b>, A. Sarma, and G. Rothermel, "History Repeats Itself More Easily When You Log It: Versioning for Mashups", in Proceedings of the IEEE Symposium on Visual Languages and Human-Centric Computing - VL/HCC, Pittsburgh, PA, USA, pages 69 - 72, September 2011. [<a href="Publications/History2011.pdf" 	target="_blank">PDF</a>]
-        <li><b>Sandeep K Kuttal</b>, A. Sarma, A. Swearngin, and G. Rothermel. "Versioning for mashups - an exploratory study", in Proceedings of the International Symposium on End-User Development - IS-EUD, Torre Canne (Brindisi), Italy, pages 25 - 41, June 2011. [<a href="Publications/End-User Development.pdf" 	target="_blank">PDF</a>]
-            
-        <br> </br>    
-         Several other conference publications related to "Partitioning Methods for Software Testing", "Image compression", "OLAP in dataware housing", "Video Compression", "Anti Lock Braking System Using Fuzzy Logic", "Neuro-Fuzzy Computing", "Impact of Globalization on Education", "Globalization
-        - A Perspective", "E-Commerce in SMEs", "Scope of OOS in Digital Libraries", and "Open Source
-        Software and Security"
-            
-        <br>
-        <br>
-        <div class="bld"><b>Technical Reports:</b></div>
-        <ul>
-            <li><b>S. K. Kuttal</b>, "Leveraging Variation Management To Support End-User Programming", PhD Dissertation, Department of Computer Science and Engineering, University of Nebraska -
-                Lincoln, 2014.
-            <li><b>Sandeep K. Kuttal</b>, A. Sarma, and G. Rothermel, "On the benefits of providing versioning support for end-users: An empirical study", In Technical Report TR-UNL-CSE-2012-0008. Dept. of Computer Science, U. Nebraska,2012. [<a target="_blank" href="Publications/VersioningSupport.pdf">pdf</a>].
-        </ul>
+    <div class="container">
+        <div class="col-sm-12">
+            <h3>Refereed Journal Publications:</h3>
+            <ul style="list-style:none;">
+                <li style="padding-bottom: 10px;">P. Robe and <strong>S. Kuttal</strong>, Designing PairBuddy - A conversational agent for pair programming, ACM Transactions on Computer-Human Interaction, vol. 29(4), 2021.</li>
+                <li style="padding-bottom: 10px;"><strong>S. Kuttal</strong>, X. Chen, Z. Wang, S. Balali and A. Sarma, Visual Resume: Exploring developers' online contributions for hiring, Information and Software Technology, vol. 138, 2021.</li>
+                <li style="padding-bottom: 10px;"><strong>S. Kuttal</strong>, S. Kim, C. Martos and A. Bejarano, How do end-user programmers forage in online repositories? An information foraging perspective, Journal of Computer Languages, vol. 62, article 101010, 2020.</li>
+                <li style="padding-bottom: 10px;"><strong>S. Kuttal</strong> and A. Ghosh, Source code comments: Overlooked in the realm of code clone detection, International Journal of Computer Science and Information Security, vol. 18(11), pp. 11-22, 2020.</li>
+                <li style="padding-bottom: 10px;"><strong>S. Kuttal</strong>, M. Sun, A. Ghosh and R. Sharma, Birds of a feather flock together? A study of developers' flocking and migration behavior in GitHub and Stack Overflow, International Journal of Computer Science and Information Security, vol. 18(6), pp. 1-12, 2020.</li>
+                <li style="padding-bottom: 10px;"><strong>S. Kuttal</strong>, Y. Bai, E. Scott and R. Sharma, Tug of perspectives: Mobile app users versus developers, International Journal of Computer Science and Information Security, vol. 18(6), pp. 83-94, 2020.</li>
+                <li style="padding-bottom: 10px;"><strong>S. Kuttal</strong>, M. Burnett, A. Sarma, G. Rothermel, I. Koeppe and B. Shepherd, How end-user programmers debug visual web-based programs: An information foraging theory perspective, Journal of Visual Languages and Computing, vol. 53, pp. 22-37, 2019.</li>
+                <li style="padding-bottom: 10px;"><strong>S. Kuttal</strong>, A. Sarma, G. Rothermel and Z. Wang, What happened to my application? Helping end users comprehend evolution through variation management, Information and Software Technology, vol. 103, pp. 55-74, 2018.</li>
+                <li style="padding-bottom: 10px;">W. Jernigan, A. Horvath, T. Cuilty, M. Burnett, M. Lee, <strong>S. Kuttal</strong>, A. Peters, I. Kwan, F. Bahmani and A. Ko, General principles for a generalized Idea Garden, Journal of Visual Languages and Computing, vol. 39, pp. 51-65, 2017.</li>
+                <li><strong>S. Kuttal</strong>, A. Sarma and G. Rothermel, On the benefits of providing versioning support for end users: An empirical study, ACM Transactions on Computer-Human Interaction, vol. 21(2), pp. 9:1-9:43, 2014.</li>
+            </ul>
+            <hr>
 
+            <h3>Rigorously Reviewed Conference Publications:</h3>
+            <ul style="list-style:none;">
+                <li style="padding-bottom: 10px;">Abim Sedhain, Riley Raasch, <strong>Sandeep Kaur Kuttal</strong>, Developers foraging behavior in code hosting sites: A gender perspective, In Artificial Intelligence in HCI, H. Degen and S. Ntoa (Eds.). Springer International Publishing, 2023.</li>
+                <li style="padding-bottom: 10px;">Abim Sedhain, Yao Wang, Brett McKinney, <strong>Sandeep Kaur Kuttal</strong>, Modeling foraging behavior in GitHub, In Artificial Intelligence in HCI, H. Degen and S. Ntoa (Eds.). Springer International Publishing, 2023.</li>
+                <li style="padding-bottom: 10px;">P. Robe, <strong>S. K. Kuttal</strong>, J. Aubuchon and J. Hart, Pair Programming Conversations with Agents vs. Developers: Challenges & Opportunities for SE Community, The ACM Joint European Software Engineering Conference, and Symposium on the Foundations of Software Engineering, 2022.</li>
+                <li style="padding-bottom: 10px;">J. Hart, J. Aubuchon and <strong>S. K. Kuttal</strong>, Feasibility of using YouTube Conversations for Pair Programming Intent Classification, IEEE Symposium on Visual Languages and Human-Centric Computing, 2022.</li>
+                <li style="padding-bottom: 10px;">A. McAuliffe, J. Hart and <strong>S. K. Kuttal</strong>, Evaluating Gender Effects in Pair Programming Conversations, IEEE Symposium on Visual Languages and Human-Centric Computing, 2022.</li>
+                <li style="padding-bottom: 10px;">A. Sedhain, S. S. Ragavan, B. McKinney and <strong>S. K. Kuttal</strong>, Estimating Foraging Values and Costs in Stack Overflow, IEEE Symposium on Visual Languages and Human-Centric Computing, 2022.</li>
+                <li style="padding-bottom: 10px;">A. Sedhain and <strong>S. K. Kuttal</strong>, Information Seeking Behavior for Bugs on GitHub: An Information Foraging Perspective, IEEE Symposium on Visual Languages and Human-Centric Computing, 2022.</li>
+                <li style="padding-bottom: 10px;">V. Diwanji, A. Sedhain, G. Bodi and <strong>S. K. Kuttal</strong>, Developers' Foraging Behavior on Stack Overflow, IEEE Symposium on Visual Languages and Human-Centric Computing, 2022.</li>
+                <li style="padding-bottom: 10px;">C. Lott, A. McAuliffe and <strong>S. Kuttal</strong>, Remote Pair Collaborations of CS Students: Leaving Women Behind? in Proceedings of Visual Languages and Human-Centric Computing, 2021.</li>
+                <li style="padding-bottom: 10px;"><strong>S. Kuttal</strong>, A. Sedhain and J. AuBuchon, Designing a Gender-Inclusive Conversational Agent For Pair Programming: An Empirical Investigation. In Artificial Intelligence in HCI, H. Degen and S. Ntoa (Eds.). Springer International Publishing, 59-75, 2021.</li>
+                <li style="padding-bottom: 10px;"><strong>S. Kuttal</strong>, B. Ong, K. Kwasny and P. Robe, Trade-offs for substituting a human with an agent in a pair programming context: The good, the bad and the ugly, Proceedings of the International Conference on Human Factors in Computing Systems, 2021. (Honorable Mention Award)</li>
+                <li style="padding-bottom: 10px;"><strong>S. Kuttal</strong>, J. Myers, S. Gurka, D. Magar, D. Piorkowski and R. Bellamy, Towards designing conversational agents for pair programming: Accounting for creativity strategies and conversational styles, Proceedings of the IEEE Symposium on Visual Languages and Human-Centric Computing, 2020.</li>
+                <li style="padding-bottom: 10px;">P. Robe, <strong>S. Kuttal</strong>, Y. Zhang and R. Bellamy, Can machine learning facilitate remote pair programming? Challenges, insights and implications, Proceedings of the IEEE Symposium on Visual Languages and Human-Centric Computing, 2020.</li>
+                <li style="padding-bottom: 10px;"><strong>S. Kuttal</strong>, K. Gerstner and A. Bejarano, Remote pair programming in online computer science education: Investigating through a gender lens, Proceedings of the IEEE Symposium on Visual Languages and Human-Centric Computing, pp. 75-85, 2019.</li>
+                <li style="padding-bottom: 10px;">C. Zhou, <strong>S. Kuttal</strong> and I. Ahmed, What makes a good developer? An empirical study of developers' technical and social competencies, Proceedings of the IEEE Symposium on Visual Languages and Human-Centric Computing, pp. 319-321, 2018.</li>
+                <li style="padding-bottom: 10px;">A. Ghosh and <strong>S. Kuttal</strong>, Semantic clone detection: Can source code comments help? Proceedings of the IEEE Symposium on Visual Languages and Human-Centric Computing, pp. 315-317, 2018.</li>
+                <li style="padding-bottom: 10px;">S. Ragavan, B. Pandya, D. Piorkowski, C. Hill, <strong>S. Kuttal</strong>, A. Sarma and M. Burnett, PFIS-V: Modeling foraging behavior in the presence of variants, Proceedings of the International Conference on Human Factors in Computing Systems, pp. 6232-6244, 2017.</li>
+                <li style="padding-bottom: 10px;">C. Martos, S. Kim and <strong>S. Kuttal</strong>, Reuse of variants in online repositories: Foraging for the fittest, Proceedings of the IEEE Symposium on Visual Languages and Human-Centric Computing, pp. 124-128, 2016.</li>
+                <li style="padding-bottom: 10px;">S. Ragavan, <strong>S. Kuttal</strong>, C. Hill, A. Sarma, D. Piorkowski and M. Burnett, Foraging among an overabundance of similar variants, Proceedings of the International Conference on Human Factors in Computing Systems, pp. 3509-3521, 2016. (Best Paper Award)</li>
+                <li style="padding-bottom: 10px;">A. Sarma, X. Chen, <strong>S. Kuttal</strong>, L. Dabbish and Z. Wang, Hiring in the global stage: Profiles of online contributions, Proceedings of the International Conference on Global Software Engineering, pp. 1-10, 2016. (Best Paper Award)</li>
+                <li style="padding-bottom: 10px;">W. Jernigan, A. Horvath, T. Cuilty, M. Burnett, M. Lee, <strong>S. Kuttal</strong>, A. Peters, I. Kwan, F. Bahmani and A. Ko, Principles of Idea Garden hints for end-user programmers, Proceedings of the IEEE Symposium on Visual Languages and Human-Centric Computing, pp. 235-243, 2015.</li>
+                <li style="padding-bottom: 10px;"><strong>S. Kuttal</strong>, A. Sarma and G. Rothermel, Predator behavior in the wild web world of bugs: An information foraging theory perspective, Proceedings of the IEEE Symposium on Visual Languages and Human-Centric Computing, pp. 59-66, 2013.</li>
+                <li style="padding-bottom: 10px;"><strong>S. Kuttal</strong>, A. Sarma and G. Rothermel, Debugging support for end-user mashup programming, Proceedings of the International Conference on Human Factors in Computing Systems, pp. 1609-1618, 2013.</li>
+                <li style="padding-bottom: 10px;"><strong>S. Kuttal</strong>, Variation support for end users, Proceedings of the IEEE Symposium on Visual Languages and Human-Centric Computing, pp. 183-184, 2013.</li>
+                <li style="padding-bottom: 10px;"><strong>S. Kuttal</strong>, A. Sarma and G. Rothermel, History repeats itself more easily when you log it: Versioning for mashups, Proceedings of the IEEE Symposium on Visual Languages and Human-Centric Computing, pp. 69-72, 2011.</li>
+                <li style="padding-bottom: 10px;"><strong>S. Kuttal</strong>, A. Sarma, A. Swearngin and G. Rothermel, Versioning for mashups - An exploratory study, Proceedings of the International Symposium on End-User Development, pp. 25-41, 2011.</li>
+            </ul>
+            <hr>
 
+            <h3>Book Chapters:</h3>
+            <ul style="list-style:none;">
+                <li style="padding-bottom: 10px;"><strong>S. Kuttal</strong>, A. Sedhain, and B. Riethmeier, How do web-active end-user programmers forage? Coding Theory – Recent Advances, New Perspectives and Applications, S. Radhakrishnan (Ed.), IntechOpen, London, United Kingdom, 2021.</li>
+            </ul>
+
+        </div>
     </div>
-
-
-<!-- End page content -->
-</div>
-
 </body>
-</html>
+      
+      <footer class="footer">
+        <p style="color:white">Copyright @ 2022 Sandeep Kaur Kuttal - All Rights Reserved</p>
+      </footer>
+      </html>
